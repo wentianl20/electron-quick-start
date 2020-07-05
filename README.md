@@ -1,5 +1,26 @@
 # electron-quick-start
 
+## Pirlo Liu 特别提示
+
+设置淘宝镜像，淘宝旗下有非常全的NPM镜像，且更新及时，无需翻墙。淘宝镜像：https://npm.taobao.org/
+
+查看当前镜像：
+
+    $ npm config get registry
+    $ yarn config get registry
+
+一般包的设置，以express为例：
+
+    # 设置临时镜像
+    $ npm --registry https://registry.npm.taobao.org install express
+    $ yarn save express --registry https://registry.npm.taobao.org
+    # 设置永久镜像
+    $ npm config set registry https://registry.npm.taobao.org
+    $ yarn config set registry https://registry.npm.taobao.org
+    
+如果你在公司域内机器，那我建议你想某些办法从别人那里拷贝整个electron module
+or 用你自己的个人电脑
+
 **Clone and run for a quick way to see Electron in action.**
 
 This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.

@@ -5,10 +5,16 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <title>Hello Electron!</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Change the npm and yarn repo in China, otherwise you can't install electron well!</h1>
+    <p># 设置临时镜像</p>
+    <p>$ npm --registry https://registry.npm.taobao.org install express</p>
+    <p>$ yarn save express --registry https://registry.npm.taobao.org</p>
+    <p># 设置永久镜像</p>
+    <p>$ npm config set registry https://registry.npm.taobao.org</p>
+    <p>$ yarn config set registry https://registry.npm.taobao.org</p>
     We are using Node.js <span id="node-version"></span>,
     Chromium <span id="chrome-version"></span>,
     and Electron <span id="electron-version"></span>.
